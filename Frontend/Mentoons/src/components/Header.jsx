@@ -40,7 +40,7 @@ function Header() {
       <div className="flex items-center space-x-4">
         <img src="/public/assets/pdflogo.png" alt="Logo" className="h-16 w-16" />
 
-        <h1 className="text-2xl font-semibold font-serif font-bold">PDF Converter</h1>
+        <h1 className="text-2xl font-semibold font-serif font-bold">mentoons</h1>
 
       </div>
 

@@ -157,10 +157,11 @@ const handleAddToCart = async (e,productId) =>{
         </header>
       </div>
       <div className="home-main">
-        <div className="home-hero section-container">
+      <div className="home-hero section-container" style={{ position: 'relative', paddingTop: 'var(--dl-space-space-threeunits)', paddingBottom: 'var(--dl-space-space-threeunits)' }}>
+  <div className="background-image " style={{ content: '', position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, backgroundImage: 'url("/assets/bg1.png")', opacity: 0., backgroundSize: 'cover', zIndex: -1 }} />
           <div className="home-max-width max-width-container">
             <div className="home-hero1">
-              <div className="home-container03 ml-36">
+              <div className="home-container03 ml-40">
                 <div className="home-info">
                   <img
                     alt="Rectangle43271305"
@@ -182,10 +183,11 @@ const handleAddToCart = async (e,productId) =>{
                   <button className="button">Explore the collection</button>
                 </div>
               </div>
-            <img src="/assets/mentoons ecommerce products/bag.png" className='w-96 h-96 mr-60' alt="" />
+            <img src="/assets/mentoons ecommerce products/bag.png" className='w-96 h-96 mr-41' alt="" />
             </div>
           </div>
         </div>
+        
         <div className="section-container column">
         
           <div className="home-banner">
@@ -257,7 +259,7 @@ A unique platform that combines Mentoring with the powerful language of Cartoons
         <div className="flex items-center justify-between">
           <p>
             <span className="text-3xl font-bold text-slate-900">₹{data.productPrice}</span>
-            <span className="text-sm text-slate-900 line-through">₹299</span>
+            {/* <span className="text-sm text-slate-900 line-through">₹299</span> */}
           </p>
           <a href="" className="flex items-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300" onClick={(e)=>handleAddToCart(e,data._id)} >
             <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

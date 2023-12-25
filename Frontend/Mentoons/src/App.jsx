@@ -10,7 +10,7 @@ import CartPage from "./components/home/CartPage"
 function App() {
 
   const token=useSelector((state)=>state.user?.token)
-
+console.log(token,"tooooooookennnnnn");
   return (
   <Router>
     <Routes>
@@ -18,7 +18,7 @@ function App() {
       <Route path="/signup" element={!token ?<SignupPage/>:<Navigate to='/'/>} />
       <Route path="/login" element={!token ?<LoginPage/>:<Navigate to='/'/>} />
       <Route path="/admin" element={<AdminHome/>}/>
-      <Route path="/cart" element={<CartPage/>}/>
+      <Route path="/cart" element={token ? <CartPage/>: <Navigate to ='/'/>}/>
     </Routes>
   </Router>
   )

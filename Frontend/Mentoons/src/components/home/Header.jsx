@@ -80,7 +80,7 @@ function Header() {
           <div data-role="MobileMenu" className="home-mobile-menu">
             <div className="home-nav">
               <div className="home-container02">
-                <span className="home-logo-center1">MOBILLIO</span>
+                <span className="home-logo-center1">MENTOONS</span>
                 <div
                   data-role="CloseMobileMenu"
                   className="home-close-mobile-menu"
